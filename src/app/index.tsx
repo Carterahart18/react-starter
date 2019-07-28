@@ -1,6 +1,4 @@
-/* eslint-env browser */
-
-import * as React from 'react';
+import React from 'react';
 
 const Component = (): JSX.Element => <h1>{'HELLO'}</h1>;
 

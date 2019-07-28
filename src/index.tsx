@@ -3,6 +3,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-const Component = (): JSX.Element => <h1>{'HELLO'}</h1>;
+import App from './app';
 
-ReactDOM.render(<Component />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

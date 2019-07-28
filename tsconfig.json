@@ -1,12 +1,26 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "jsx": "react",
     "outDir": "./dist/",
     "module": "es6",
-    "noImplicitAny": true,
     "sourceMap": true,
     "target": "es5",
-  }
+    "lib": ["es6", "dom"],
+    "rootDir": "src",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@src/*": ["@src/*"],
+      "@stories/*": ["@stories/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "webpack", "jest"],
+  "types": ["typePatches"]
 }
