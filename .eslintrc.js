@@ -5,8 +5,10 @@ module.exports = {
     'plugin:@typescript-eslint/recommended'
   ],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react-hooks'],
   rules: {
-    indent: ['true', 2]
+    indent: ['true', 2],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   }
 };

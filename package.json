@@ -4,7 +4,14 @@
   "private": true,
   "scripts": {
     "build": "webpack --config webpack/webpack.config.js",
+    "start": "webpack-dev-server --config webpack/webpack.config.js",
     "storybook": "start-storybook -p 9009 -c .storybook"
+  },
+  "dependencies": {
+    "core-js": "^3.1.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "regenerator-runtime": "^0.13.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -15,26 +22,27 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@storybook/addon-a11y": "^5.1.9",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-centered": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
     "@typescript-eslint/eslint-plugin": "^1.12.0",
     "@typescript-eslint/parser": "^1.12.0",
     "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
     "eslint": "^6.0.1",
     "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "style-loader": "^0.23.1",
+    "svg-react-loader": "^0.4.6",
     "typescript": "^3.5.3",
+    "url-loader": "^2.1.0",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
     "webpack-merge": "^4.2.1"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.4.4",
-    "@storybook/addon-actions": "^5.1.9",
-    "@storybook/addon-centered": "^5.1.9",
-    "@storybook/addon-knobs": "^5.1.9",
-    "@storybook/addons": "^5.1.9",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
   }
 }
